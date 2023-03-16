@@ -2,7 +2,6 @@
 
 /**
  * main - print size of various types
- * 
  * Description: prints the size of various
  * types on the computer that the code is
  * run on
