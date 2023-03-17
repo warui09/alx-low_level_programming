@@ -2,8 +2,8 @@
 
 /**
  *main - entry point
- *Description: print 4 digits in ascending order in pairs that are
- *separeted by , and a space
+ *Description: print 4 digits in pairs of two in ascending order
+ *separated by , and spaces
  *
  *Return: 0 on success
  */
@@ -15,24 +15,20 @@ int main(void)
 	int c;
 	int d;
 
-	for (a = '0'; a <= b - 1; a++)
+	for (a = '0'; a <= '9'; a++)
 	{
-		for (b = '0'; b <= c - 1; b++)
+		for (b = '0'; b <= '9'; b++)
 		{
-			for (c = '0'; c <= d - 1; c++)
+			for (c = '0'; c <= '9'; c++)
 			{
-				for (d = '0'; d <= '9'; d++)
+				for (d ='0'; d <= '9'; d++)
 				{
 					putchar(a);
 					putchar(b);
 					putchar(' ');
 					putchar(c);
 					putchar(d);
-					if (b != '8')
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(',');
 				}
 			}
 		}
@@ -40,4 +36,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
