@@ -7,8 +7,6 @@
  *Return: 0 on success
  */
 
-void print_alphabet(void);
-
 int main(void)
 {
 	print_alphabet();
@@ -21,8 +19,8 @@ void print_alphabet(void)
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
-		putchar(i);
+		_putchar(i);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
 
