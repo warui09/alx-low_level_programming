@@ -1,26 +1,14 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- *main - entry point
- *Description: print lowercase alphabet followed by a string
- *
- *Return: 0 on success
+ *print_alphabet - print lowercase alphet
  */
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
 
 void print_alphabet(void)
 {
-	int i;
+	char i;
 
 	for (i = 'a'; i <= 'z'; i++)
-	{
 		_putchar(i);
-	}
 	_putchar('\n');
 }
-
