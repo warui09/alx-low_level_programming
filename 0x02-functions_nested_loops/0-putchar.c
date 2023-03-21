@@ -1,15 +1,14 @@
-#include <stdio.h>
 #include "main.h"
-
-/**
- *main - entry point
- *Description: print a string followed by a newline
- *
- *Return: 0 on success
- */
 
 int main(void)
 {
-	_putchar("_putchar\n");
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	return (0);
 }
