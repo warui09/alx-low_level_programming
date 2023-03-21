@@ -18,25 +18,32 @@ void print_times_table(int n)
 			for (j = 0; j <= n; j++)
 			{
 				k = i * j;
-				if (k >= 100)
+				if (j != 0)
 				{
-					printf("%d", k);
-					if (j != n)
-						printf(", ");
-				}
-				else if (k >= 10 && k < 100)
-				{
-					printf(" ");
-					printf("%d", k);
-					if (j != n)
-						printf(", ");
+					if (k >= 100)
+					{
+						printf("%d", k);
+						if (j != n)
+							printf(", ");
+					}
+					else if (k >= 10 && k < 100)
+					{
+						printf(" ");
+						printf("%d", k);
+						if (j != n)
+							printf(", ");
+					}
+					else
+					{
+						printf("  ");
+						printf("%d", k);
+						if (j != n)
+							printf(", ");
+					}
 				}
 				else
 				{
-					printf("  ");
 					printf("%d", k);
-					if (j != n)
-						printf(", ");
 				}
 			}
 			printf("\n");
