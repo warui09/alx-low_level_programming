@@ -1,24 +1,18 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- *main - entry point
- *Description: check for lower and upper case alphabet
+ *_isalpha - check if character is alphabet
+ *Description: check if provided character is alphabet
+ *both lower and upper case
+ *@c: character to be checked
  *
  *Return: 1 if lowercase or uppercase, 0 otherwise
  */
 
-int _isalpha(int c);
-
-int main(void)
-{
-	int r;
-
-	r = _isalpha('H');
-	return (0);
-}
-
 int _isalpha(int c)
 {
-	int i;
-
-	for (i = 'A' 
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	else
+		return (0);
+}
