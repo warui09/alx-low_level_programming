@@ -44,6 +44,7 @@ void print_times_table(int n)
 				else
 				{
 					printf("%d", k);
+					printf(" ");
 				}
 			}
 			printf("\n");
