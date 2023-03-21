@@ -1,19 +1,11 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- *main - entry point
+ *print_alphabet_x10 - print alphabet
  *Description: print alphabet ten times
  *
- *Return: Always 0
+ *Return: void
  */
-
-void print_alphabet_x10(void);
-
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
-}
 
 void print_alphabet_x10(void)
 {
@@ -24,8 +16,8 @@ void print_alphabet_x10(void)
 	{
 		for (j = 'a'; j <= 'z'; j++)
 		{
-			putchar(j);
+			_putchar(j);
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
