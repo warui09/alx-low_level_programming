@@ -1,27 +1,24 @@
 #include <stdio.h>
-
 /**
- *main - check code
- *Description: print 50 first fibonacci numbers
- *fibonacci - print nth fibonacci term
- *@n: print nth fibonnaci term
+ *main - print first 50 fibonacci terms starting with 1 and 2
+ *
  *Return: Always 0
  */
 
-unsigned long fibonacci(unsigned long n)
-{
-	if (n == 0)
-		return (0);
-	else if (n == 1)
-		return (1);
-	else
-		return (fibonacci(n - 2) + fibonacci(n - 1));
-}
-
 int main(void)
 {
-	int i;
-
-	for (i = 0; i < 50; i++)
-		printf("%lu", fibonacci(i));
+	int count;
+	unsigned long fib1 = 0, fib2 = 1, sum;
+	for (count = 0; count < 50; count++)
+	{
+		sum = fib1 + fib2;
+		printf("%lu", sum);
+		fib1 = fib2;
+		fib2 = sum;
+		if (count == 49)
+			printf("\n");
+		else
+			printf(", ");
+	}
+	return (0);
 }
