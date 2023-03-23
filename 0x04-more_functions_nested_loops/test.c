@@ -1,10 +1,3 @@
-#include "main.h"
-
-/**
- *print_diagonal - print diagonal line
- *@n: number of times to print
- */
-
 void print_diagonal(int n)
 {
 	if (n <= 0)
