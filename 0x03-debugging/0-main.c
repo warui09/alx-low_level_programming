@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- *main - tests the output of a function
- *Return: 0
+ *main - entry
+ *Description: test function that prints if int is positive or negative
+ *Return: Always 0
  */
 
 int main(void)
@@ -13,3 +14,4 @@ int main(void)
 	positive_or_negative(i);
 	return (0);
 }
+
