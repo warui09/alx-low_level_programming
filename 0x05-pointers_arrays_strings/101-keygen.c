@@ -10,8 +10,8 @@
 
 int main(void)
 {
-	const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+{}[]<>?";  // Set of valid characters
-    const int charset_size = sizeof(charset) - 1;
+	const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+{}[]<>?";
+	const int charset_size = sizeof(charset) - 1;
     char password[PASSWORD_LENGTH + 1];
     int i;
 
