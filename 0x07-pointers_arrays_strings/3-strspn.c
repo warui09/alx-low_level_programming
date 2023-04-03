@@ -3,7 +3,8 @@
 /**
  *_strspn - get length of a prefix substring
  *@s: full string
- *accept: substring
+ *@accept: substring
+ *Return: unsigned int
  */
 unsigned int _strspn(char *s, char *accept)
 {
@@ -24,8 +25,7 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		if (!is_match)
 			break;
-		else
-			k++;
+		k++;
 	}
 	return (k);
 }
