@@ -1,4 +1,5 @@
 #include "main.h"
+#define NULL ((void*)0)
 
 /**
  *_strpbrk - search a string for any of a set of bytes
@@ -13,6 +14,7 @@ char *_strpbrk(char *s, char *accept)
 	char *a;
 	int is_match;
 
+	a = NULL;
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		is_match = 0;
