@@ -1,4 +1,11 @@
 C - Recursion
+All the tasks in this project are to completed using recursion only
 
 0. She locked away a secret, deep inside herself, something she once knew to be true... but chose to forget
 Write a program that prints a string followed by a new line.
+
+1. Why is it so important to dream? Because, in my dreams we are together
+Write a function that prints a string in reverse.
+
+3. You mustn't be afraid to dream a little bigger, darling
+Write a function that returns the factorial of a given number.
