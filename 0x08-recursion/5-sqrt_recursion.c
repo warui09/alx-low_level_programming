@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion_helper - recursive helper function to calculate square root
+ * _sqrt_helper - recursive helper function to calculate square root
  *
  * @n: number to calculate square root of
  * @min: minimum possible value of square root
