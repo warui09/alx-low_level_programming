@@ -9,3 +9,6 @@ followed by a new line
 
 2. The best argument against democracy is a five-minute conversation with the average voter
 This program prints out all the arguments it receives
+
+3. Neither irony nor sarcasm is argument
+This program multiplies two integers
