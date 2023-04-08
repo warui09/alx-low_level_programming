@@ -12,3 +12,6 @@ This program prints out all the arguments it receives
 
 3. Neither irony nor sarcasm is argument
 This program multiplies two integers
+
+4. To infinity and beyond
+This program add all the numbers passed to it
