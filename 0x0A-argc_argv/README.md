@@ -15,3 +15,6 @@ This program multiplies two integers
 
 4. To infinity and beyond
 This program add all the numbers passed to it
+
+5. Minimal Number of Coins for Change
+Print out the minimum number of coins needed to make change for an amount of money
