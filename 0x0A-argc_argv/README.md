@@ -6,3 +6,6 @@ This program prints its name followed by a new line
 1. Silence is argument carried out by other means
 This program prints the number of arguments passed to it
 followed by a new line
+
+2. The best argument against democracy is a five-minute conversation with the average voter
+This program prints out all the arguments it receives
