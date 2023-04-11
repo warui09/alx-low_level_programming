@@ -13,4 +13,7 @@ and contains a copy of a string passed as a parameter
 This function concatenates two strings
 
 3. If you even dream of beating me you'd better wake up and apologize
-This function returns a pointer to a 2 dimensional array of integers
+This function returns a pointer to a two dimensional array of integers
+
+4. It's not bragging if you can back it up
+This function frees a two dimensional array
