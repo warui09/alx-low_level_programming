@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- *free-grid - free memory allocated for a two dimensional grid
+ *free_grid - free memory allocated for a two dimensional grid
  *
  *@grid: grid to free
  *@height: number of sub-arrays in the array
