@@ -8,3 +8,6 @@ This program creates an array of chars and initializes it with a char
 1. The woman who has no imagination has no wings
 This function returns a pointer to memory that has been newly allocated
 and contains a copy of a string passed as a parameter
+
+2. He who is not courageous enough to take risks will accomplish nothing in life
+This function concatenates two strings
