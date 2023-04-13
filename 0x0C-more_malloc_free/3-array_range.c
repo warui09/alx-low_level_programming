@@ -4,8 +4,8 @@
 /**
  *array_range - creates an array of integers
  *
- *@min: smallest value of integer
- *@max: largest value of integer
+ *@min: smallest value of array
+ *@max: largest value of array
  *
  *Return: int
  */
@@ -26,4 +26,3 @@ int *array_range(int min, int max)
 		a[i] = min++;
 	return (a);
 }
-
