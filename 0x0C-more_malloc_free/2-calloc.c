@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdlib.h>
 
 /**
  * _calloc - create an array and initialize it to 0
@@ -21,9 +22,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	a = malloc(nmemb * size);
 	if (a == NULL)
 		return (NULL);
-
-	for (i = 0; i < nmemb * size; i++)
-		a[i * size] = 0;
+	memset(a, 0, nmemb * size);
 
 	return (a);
 }
