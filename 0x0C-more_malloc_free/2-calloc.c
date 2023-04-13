@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdlib.h>
+#include <string.h>
 
 /**
  * _calloc - create an array and initialize it to 0
@@ -14,7 +14,6 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *a;
-	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
