@@ -11,3 +11,6 @@ This function allocates memory for an array using malloc
 
 3. array\_range
 This function creates an array of integers
+
+4. \_realloc
+This function reallocates memory using malloc and free
