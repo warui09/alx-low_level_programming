@@ -1,0 +1,27 @@
+#include "dog.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+/**
+ *print-dog - prints a struct dog
+ *
+ *@d: pointer to the struct to print
+ *
+ *Return: nothing
+ */
+
+void print_dog(struct dog *d)
+{
+	if (d == NULL)
+		exit(1);
+	if (d->name == NULL)
+		printf("nil\n");
+	printf("Name: %s\n", d->name);
+	if (!d->age)
+		printf("nil\n");
+	printf("Age: %f\n", d->age);
+	if (d->owner == NULL)
+		printf("nil\n");
+	printf("Owner: %s\n", d->owner);
+}
+	
