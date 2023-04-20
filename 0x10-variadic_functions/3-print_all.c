@@ -2,13 +2,13 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include "variadic_functions.h"
+
 /**
  *print_all - prints all arguments it is passed
- *
  *@format: format of the arguments
- *
  *Return: nothing
  */
+
 void print_all(const char * const format, ...)
 {
 	va_list ap;
@@ -37,8 +37,9 @@ void print_all(const char * const format, ...)
 				case 's':
 					a = va_arg(ap, char *);
 					if (a == NULL)
-						printf("(nil)");
-					printf("%s%s", separator, a);
+						printf("%s(nil)", separator);
+					else
+						printf("%s%s", separator, a);
 					break;
 				default:
 					i++;
