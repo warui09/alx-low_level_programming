@@ -37,4 +37,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		start = 1;
 	}
 	printf("\n");
+	va_end(ap);
 }
