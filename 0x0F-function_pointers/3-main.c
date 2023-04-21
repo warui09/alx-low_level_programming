@@ -24,8 +24,8 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(98);
 	}
-
-	if (*s != '+' && *s != '-' && *s != '*' && *s != '/' && *s != '%')
+	
+	if (*s != '+' && *s != '-' && *s != '/' && *s != '%' && *s != '*')
 	{
 		printf("Error\n");
 		exit(99);
