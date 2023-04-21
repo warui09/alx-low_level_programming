@@ -38,6 +38,7 @@ int main(int argc, char **argv)
 	}
 
 	c = (*get_op_func(s))(a, b);
+
 	printf("%d\n", c);
 	return (0);
 }
