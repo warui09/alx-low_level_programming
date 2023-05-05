@@ -12,7 +12,7 @@ int get_endianness(void)
 	char *a;
 
 	i = 0x76543210;
-	a = (char*) &i;
+	a = (char *) &i;
 
 	if (*a == 0x10)
 		return (1);
