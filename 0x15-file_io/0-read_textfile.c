@@ -12,10 +12,10 @@
  *Return: number of letters read and printed
  */
 
-size_t read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int file_desc;
-	size_t i, num_read;
+	ssize_t num_written, num_read;
 	char *buffer;
 
 	if (!filename)
@@ -26,17 +26,29 @@ size_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	file_desc = open(filename, O_RDONLY);
-
 	if (file_desc < 0)
+	{
+		free(buffer);
 		return (0);
+	}
 
 	num_read = read(file_desc, buffer, letters);
-
-	for (i = 0; i < num_read; i++)
-		write(1, &buffer[i], 1);
-
-	if (i <= 0)
+	if (num_read < 0)
+	{
+		free(buffer);
+		close(file_desc);
 		return (0);
+	}
 
-	return (i);
+	num_written = write(STDOUT_FILENO, buffer, num_read);
+	if (num_written < 0 || num_written != num_read)
+	{
+		free(buffer);
+		close(file_desc);
+		return (0);
+	}
+
+	free(buffer);
+	close(file_desc);
+	return (num_read);
 }
