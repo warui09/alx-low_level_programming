@@ -4,11 +4,13 @@
 #include <stdlib.h>
 
 /**
- *copy_file - copies the content of a file to another file
- *@file_from: file to copy from
- *@file_to: file to copy to
+ * copy_file - copies the content of a file to another file
  *
- *Return: 1 on success and -1 on failure
+ * @file_from: file to copy from
+ * @file_to: file to copy to
+ *
+ * Return: 1 on success and -1 on failure
+ *
  */
 
 int main(int argc, char **argv)
@@ -62,7 +64,7 @@ int main(int argc, char **argv)
 
 	if (close(file_to_desc) < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't close %s\n", argv[2]);
 		exit(100);
 	}
 
