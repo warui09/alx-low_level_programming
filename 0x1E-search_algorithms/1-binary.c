@@ -9,6 +9,7 @@
  * @value: Value to search for in the array
  * Return: Index at which value is found, or -1 if not found
  */
+
 int binary_search(int *array, size_t size, int value)
 {
 	size_t start, end, mid, i;
