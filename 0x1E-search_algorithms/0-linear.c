@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "search_algos.h"
 
 /**
@@ -8,7 +7,7 @@
  * @array: pointer to the array to search
  * @size: size of the array
  * @value: value to search for in the array
- * Return: EXIT_SUCCESS
+ * Return: index at which value is found
  */
 
 int linear_search(int *array, size_t size, int value)
