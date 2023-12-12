@@ -42,8 +42,7 @@ int jump_search(int *array, size_t size, int value)
 	{
 		printf("Found %i at index: %li\n", array[i], i);
 		return ((int) i);
-	} else
-	{
-		return (-1);
 	}
+
+	return (-1)
 }
